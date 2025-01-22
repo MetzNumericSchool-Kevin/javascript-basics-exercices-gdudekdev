@@ -87,3 +87,8 @@ for(let i=0;i<potions.length;i++){
 
 potions.push("Philtre de Régénération");
 console.log(potions)
+
+// Finaly,nope.
+
+potions.pop();
+console.log(potions)
