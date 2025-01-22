@@ -47,24 +47,28 @@ let open = true;
 //     );
 // }
 
-// //Calcul du prix total d'une commande de potion
+// // //Calcul du prix total d'une commande de potion
 
-let quantite_potion_soin=prompt("Combien de potions de soin désirez-vous?");
-let prix_total=quantite_potion_soin*prix_potion_soin;
-console.log(`Prix de ${quantite_potion_soin} potions de soin: ${prix_total} ${currency} mon cher Aventurier. 💸.`)
+// let quantite_potion_soin=prompt("Combien de potions de soin désirez-vous?");
+// let prix_total=quantite_potion_soin*prix_potion_soin;
+// console.log(`Prix de ${quantite_potion_soin} potions de soin: ${prix_total} ${currency} mon cher Aventurier. 💸.`)
 
-//Bourse de l'Aventurier 💰
+// //Bourse de l'Aventurier 💰
 
-let stock_argent=20;
+// let stock_argent=20;
 
-if(prix_total>stock_argent){
-    console.log(`Désolé Aventurier, vous n'avez pas assez d'argent pour cela...`)
-}else{
-    if(quantite_potion_soin>nb_potions){
-        console.log(`Désolé Aventurier, nous n'avons pass suffisament de potions en stock`);
-    }else{
-        console.log(`Voici vos potions Aventurier! Merci pour votre achat!`);
-        stock_argent-=prix_total;
-        nb_potions-=quantite_potion_soin;
-    };
-};
+// if(prix_total>stock_argent){
+//     console.log(`Désolé Aventurier, vous n'avez pas assez d'argent pour cela...`)
+// }else{
+//     if(quantite_potion_soin>nb_potions){
+//         console.log(`Désolé Aventurier, nous n'avons pass suffisament de potions en stock`);
+//     }else{
+//         console.log(`Voici vos potions Aventurier! Merci pour votre achat!`);
+//         stock_argent-=prix_total;
+//         nb_potions-=quantite_potion_soin;
+//     };
+// };
+
+const potions=["Élixir de Vitalité","Nectar de l'Invisibilité","Essence de Sérénité"]
+
+console.log(potions)
