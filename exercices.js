@@ -106,3 +106,6 @@ const potion_soin = {
 };
 
 console.log(potion_soin);
+
+console.log(potion_soin.nom_potion);
+console.log(potion_soin["prix_potion"]);
