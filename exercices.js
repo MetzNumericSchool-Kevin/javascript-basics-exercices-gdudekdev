@@ -69,43 +69,65 @@ let open = true;
 //     };
 // };
 
-// Liste des potions
-const potions = [
-  "Élixir de Vitalité",
-  "Nectar de l'Invisibilité",
-  "Essence de Sérénité",
+// // Liste des potions
+// const potions = [
+//   "Élixir de Vitalité",
+//   "Nectar de l'Invisibilité",
+//   "Essence de Sérénité",
+// ];
+
+// console.log(potions);
+
+// //Affichage des potions
+
+// console.log(potions[0]);
+// console.log(potions[potions.length - 1]);
+
+// for (let i = 0; i < potions.length; i++) {
+//   console.log(`Nous avons de la potion :${potions[i]}`);
+// }
+
+// // Ajout d'une nouvelle potion
+
+// potions.push("Philtre de Régénération");
+// console.log(potions);
+
+// // Finally,nope.
+
+// potions.pop();
+// console.log(potions);
+
+// //Rangeons les informations de la potion de soin dans un objet
+
+// const potion_soin = {
+//   nom_potion: "Élixir de Vitalité",
+//   prix_potion: 2,
+//   stock_potion: 30,
+// };
+
+// console.log(potion_soin);
+
+// //Affichons les informations de la potion
+
+// console.log(potion_soin.nom_potion);
+// console.log(potion_soin["prix_potion"]);
+
+//C'est l'heure de faire l'inventaire...
+
+const inventaire = [
+    {
+        "nom_potion": "Élixir de Vitalité",
+        "prix_potion": 2,
+        "stock_potion": 30
+    },
+    {
+        "nom_potion": "Nectar de l'Invisibilité",
+        "prix_potion": 5,
+        "stock_potion": 15
+    },
+    {
+        "nom_potion": "Essence de Sérénité",
+        "prix_potion": 3,
+        "stock_potion": 20
+    }
 ];
-
-console.log(potions);
-
-//Affichage des potions
-
-console.log(potions[0]);
-console.log(potions[potions.length - 1]);
-
-for (let i = 0; i < potions.length; i++) {
-  console.log(`Nous avons de la potion :${potions[i]}`);
-}
-
-// Ajout d'une nouvelle potion
-
-potions.push("Philtre de Régénération");
-console.log(potions);
-
-// Finally,nope.
-
-potions.pop();
-console.log(potions);
-
-//Rangeons les informations de la potion de soin dans un objet
-
-const potion_soin = {
-  nom_potion: "Élixir de Vitalité",
-  prix_potion: 2,
-  stock_potion: 30,
-};
-
-console.log(potion_soin);
-
-console.log(potion_soin.nom_potion);
-console.log(potion_soin["prix_potion"]);
