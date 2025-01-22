@@ -82,3 +82,8 @@ console.log(potions[potions.length-1]);
 for(let i=0;i<potions.length;i++){
     console.log(`Nous avons de la potion :${potions[i]}`);
 }   
+
+// Ajout d'une nouvelle potion
+
+potions.push("Philtre de Régénération");
+console.log(potions)
