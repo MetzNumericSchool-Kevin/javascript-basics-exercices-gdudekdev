@@ -70,25 +70,39 @@ let open = true;
 // };
 
 // Liste des potions
-const potions=["Élixir de Vitalité","Nectar de l'Invisibilité","Essence de Sérénité"]
+const potions = [
+  "Élixir de Vitalité",
+  "Nectar de l'Invisibilité",
+  "Essence de Sérénité",
+];
 
-console.log(potions)
+console.log(potions);
 
 //Affichage des potions
 
 console.log(potions[0]);
-console.log(potions[potions.length-1]);
+console.log(potions[potions.length - 1]);
 
-for(let i=0;i<potions.length;i++){
-    console.log(`Nous avons de la potion :${potions[i]}`);
-}   
+for (let i = 0; i < potions.length; i++) {
+  console.log(`Nous avons de la potion :${potions[i]}`);
+}
 
 // Ajout d'une nouvelle potion
 
 potions.push("Philtre de Régénération");
-console.log(potions)
+console.log(potions);
 
-// Finaly,nope.
+// Finally,nope.
 
 potions.pop();
-console.log(potions)
+console.log(potions);
+
+//Rangeons les informations de la potion de soin dans un objet
+
+const potion_soin = {
+  nom_potion: "Élixir de Vitalité",
+  prix_potion: 2,
+  stock_potion: 30,
+};
+
+console.log(potion_soin);
