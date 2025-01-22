@@ -69,6 +69,16 @@ let open = true;
 //     };
 // };
 
+// Liste des potions
 const potions=["Élixir de Vitalité","Nectar de l'Invisibilité","Essence de Sérénité"]
 
 console.log(potions)
+
+//Affichage des potions
+
+console.log(potions[0]);
+console.log(potions[potions.length-1]);
+
+for(let i=0;i<potions.length;i++){
+    console.log(`Nous avons de la potion :${potions[i]}`);
+}   
