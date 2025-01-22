@@ -115,19 +115,36 @@ let open = true;
 //C'est l'heure de faire l'inventaire...
 
 const inventaire = [
-    {
-        "nom_potion": "Élixir de Vitalité",
-        "prix_potion": 2,
-        "stock_potion": 30
-    },
-    {
-        "nom_potion": "Nectar de l'Invisibilité",
-        "prix_potion": 5,
-        "stock_potion": 15
-    },
-    {
-        "nom_potion": "Essence de Sérénité",
-        "prix_potion": 3,
-        "stock_potion": 20
-    }
+  {
+    nom_potion: "Élixir de Vitalité",
+    prix_potion: 2,
+    stock_potion: 30,
+  },
+  {
+    nom_potion: "Nectar de l'Invisibilité",
+    prix_potion: 5,
+    stock_potion: 15,
+  },
+  {
+    nom_potion: "Essence de Sérénité",
+    prix_potion: 3,
+    stock_potion: 20,
+  },
 ];
+
+//Aventurier, regarde tout ce que je vends!
+
+for (let i = 0; i < inventaire.length; i++) {
+  console.log(`Nom : ${inventaire[i].nom_potion}`);
+  console.log(`Prix : ${inventaire[i].prix_potion}`);
+  console.log(`Stock : ${inventaire[i].stock_potion}`);
+}
+
+//Affichage dynamique
+console.log("Affichage dynamique")
+
+for (let i = 0; i < inventaire.length; i++) {
+  for (let objet in inventaire[i]) {
+    console.log(`${objet} : ${inventaire[i][objet]}`);
+  }
+}
